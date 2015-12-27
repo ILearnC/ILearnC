@@ -18,6 +18,6 @@ module.exports = {
     path: 'public/',
     javascriptPath: 'assets/javascript',
     stylesheetsPath: 'assets/stylesheets',
-    imagePath: 'assets/images',
+    imagePath: 'assets/',
   }
 };
