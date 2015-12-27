@@ -4,8 +4,8 @@ module.exports = {
     extension: '.js{,x}'
   },
   component: {
-    path: 'app/assets/component',
-    extension: '.jsx{,x}'
+    path: 'app/assets/component/',
+    extension: '.js{,x}'
   },
   sass: {
     path: 'app/assets/scss/',
@@ -19,5 +19,6 @@ module.exports = {
     javascriptPath: 'assets/javascript',
     stylesheetsPath: 'assets/stylesheets',
     imagePath: 'assets/',
+    componentPath: 'assets/component'
   }
 };
