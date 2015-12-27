@@ -25,7 +25,7 @@ function vendorTask(){
     .require(vendor)
     .bundle()
     .pipe(source('vendor.js'))
-    .pipe(gulp.dest(config.build.path + config.javascript.path))
+    .pipe(gulp.dest(config.build.path))
 }
 
 export default {
