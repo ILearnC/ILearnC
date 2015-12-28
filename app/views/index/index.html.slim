@@ -1,2 +1,6 @@
-h1 Index#index
-p Find me in app/views/index/index.html.erb
+ul
+  - @skills.each do |skill|
+    li
+      .skill-image
+      .skill-title
+        p #{skill.title}
