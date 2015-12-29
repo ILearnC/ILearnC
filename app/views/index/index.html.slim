@@ -1,6 +1,7 @@
-ul
+div.skills
   - @skills.each do |skill|
-    li
+    div.skills-item
       .skill-image
       .skill-title
-        p #{skill.title}
+        div #{skill.title}
+        div #{skill.description} &nbsp;#{skill.user.name}

@@ -1,0 +1,19 @@
+body {
+  background-color: #EEEEEE; }
+
+.skills {
+  display: flex;
+  margin: 20px;
+  justify-content: space-around; }
+  .skills .skills-item {
+    margin: 20px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #888888; }
+    .skills .skills-item .skill-image {
+      height: 100px;
+      background-color: #86ADD3;
+      margin: 10px 0; }
+    .skills .skills-item .skill-title {
+      text-transform: capitalize; }
