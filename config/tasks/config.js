@@ -1,6 +1,6 @@
 module.exports = {
   javascript: {
-    path: 'app/assets/javascript/',
+    path: 'app/assets/javascripts/',
     extension: '.js{,x}'
   },
   component: {
@@ -16,7 +16,7 @@ module.exports = {
   },
   build: {
     path: 'vender/',
-    javascriptPath: 'assets/javascript',
+    javascriptPath: 'assets/javascripts',
     stylesheetsPath: 'assets/stylesheets',
     imagePath: 'assets/',
     componentPath: 'assets/component'
