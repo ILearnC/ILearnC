@@ -1,0 +1,31 @@
+/* line 1, /Users/twer/Documents/workshop/ilearnc/app/assets/scss/partials/_homepage.scss */
+body {
+  background-color: #EEEEEE;
+}
+
+/* line 5, /Users/twer/Documents/workshop/ilearnc/app/assets/scss/partials/_homepage.scss */
+.skills {
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* line 11, /Users/twer/Documents/workshop/ilearnc/app/assets/scss/partials/_homepage.scss */
+.skills .skills-item {
+  margin: 20px;
+  padding: 20px;
+  width: 180px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #888888;
+}
+/* line 19, /Users/twer/Documents/workshop/ilearnc/app/assets/scss/partials/_homepage.scss */
+.skills .skills-item .skill-image {
+  height: 150px;
+  background-color: #86ADD3;
+  margin: 10px 0;
+}
+/* line 25, /Users/twer/Documents/workshop/ilearnc/app/assets/scss/partials/_homepage.scss */
+.skills .skills-item .skill-title {
+  text-transform: capitalize;
+}
