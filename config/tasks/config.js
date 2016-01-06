@@ -8,7 +8,7 @@ module.exports = {
     extension: '.js{,x}'
   },
   sass: {
-    path: 'app/assets/scss/',
+    path: 'app/assets/stylesheets/',
     extension: '.scss'
   },
   image: {
