@@ -7,8 +7,10 @@ html
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   body
-    nav
-      div
-        a href="/login" 登陆
+    nav.navigation
+      div.navigation--message
+        a href='/' 首页
+      div.navigation--login
+        a href='/login' 登陆
     div
       = yield

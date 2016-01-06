@@ -1,5 +1,6 @@
 body {
-  background-color: #EEEEEE; }
+  background-color: #EEEEEE;
+  margin: 0; }
 
 .skills {
   display: flex;
@@ -19,3 +20,27 @@ body {
       margin: 10px 0; }
     .skills .skills-item .skill-title {
       text-transform: capitalize; }
+
+.navigation {
+  background-color: #ffffff;
+  height: 50px;
+  box-shadow: 0px 2px 2px #888888;
+  font-size: 18px; }
+
+.navigation--message {
+  float: left;
+  padding: 12px 35px; }
+  .navigation--message a {
+    color: #566DCA;
+    text-decoration: none; }
+    .navigation--message a:hover {
+      color: #45429A; }
+
+.navigation--login {
+  float: right;
+  padding: 12px 35px; }
+  .navigation--login a {
+    color: #566DCA;
+    text-decoration: none; }
+    .navigation--login a:hover {
+      color: #45429A; }

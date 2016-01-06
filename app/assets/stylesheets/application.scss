@@ -1,1 +1,30 @@
 @import 'partials/homepage';
+
+@mixin navigation($navigationAlign) {
+  float: #{$navigationAlign};
+  padding: 12px 35px;
+
+  a {
+    color: #566DCA;
+    text-decoration: none;
+
+    &:hover {
+      color: #45429A;
+    }
+  }
+}
+
+.navigation {
+  background-color: #ffffff;
+  height: 50px;
+  box-shadow: 0px 2px 2px #888888;
+  font-size: 18px;
+}
+
+.navigation--message {
+  @include navigation(left);
+}
+
+.navigation--login {
+  @include navigation(right);
+}
