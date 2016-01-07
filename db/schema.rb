@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151228140548) do
+ActiveRecord::Schema.define(version: 20160106085634) do
 
   create_table "images", force: :cascade do |t|
     t.text     "thumbnail"
@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 20151228140548) do
     t.string   "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "password"
   end
 
 end

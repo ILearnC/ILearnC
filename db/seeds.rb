@@ -7,8 +7,8 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 users = User.create([
-                        {name: 'XiaoRong', email: 'xiaorong@gmail.com'},
-                        {name: 'MengRu', email: 'mengru@gmail.com'}
+                        {name: 'XiaoRong', email: 'xiaorong@gmail.com', password: '123456'},
+                        {name: 'MengRu', email: 'mengru@gmail.com', password: '123456'}
                     ])
 skill_set1 = Skill.create([
                               {title: 'css', description: 'css basics', user: users.first},
