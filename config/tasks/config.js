@@ -15,7 +15,7 @@ module.exports = {
     path: 'app/assets/images'
   },
   build: {
-    path: 'vender/',
+    path: 'public/',
     javascriptPath: 'assets/javascripts',
     stylesheetsPath: 'assets/stylesheets',
     imagePath: 'assets/',
