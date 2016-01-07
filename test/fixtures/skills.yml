@@ -1,9 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  description: MyString
+  title: 'CSS'
+  description: 'CSS basics'
+  user: users(:one)
 
 two:
-  title: MyString
-  description: MyString
+  title: 'Ruby'
+  description: 'Ruby basics'
+  user: suers(:two)
