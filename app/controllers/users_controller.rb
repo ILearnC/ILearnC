@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   def homepage
     username = params[:name]
     @user = User.find_by_name(username)
-    if @user.password == params[:password] && @user.class != NilClass
+    if @user.class != NilClass && @user.password == params[:password]
       redirect_to :controller => 'index', :action => 'index'
     else
       render 'login'
