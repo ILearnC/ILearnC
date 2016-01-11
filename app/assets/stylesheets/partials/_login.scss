@@ -1,4 +1,4 @@
-.login {
+.ilearn__login {
   margin: 15px;
   background-color: #fff;
   float: right;
@@ -15,7 +15,7 @@
   }
 }
 
-.ilearn--input {
+.ilearn__input {
   height: 35px;
   padding: 0 10px;
   border-radius: 4px;
@@ -24,7 +24,7 @@
   width: 150px;
 }
 
-.ilearn--button {
+.ilearn__button {
   padding: 10px 25px;
   color: #fff;
   background-color: #566DCA;
@@ -34,5 +34,15 @@
   &:hover {
     cursor: pointer;
     background-color: #45429A;
+  }
+}
+
+.ilearn__register {
+  font-size: 12px;
+  padding-top: 10px;
+  float: right;
+
+  a {
+    color: #566DCA;
   }
 }

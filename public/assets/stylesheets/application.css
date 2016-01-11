@@ -21,7 +21,7 @@ body {
     .skills .skills-item .skill-title {
       text-transform: capitalize; }
 
-.login {
+.ilearn__login {
   margin: 15px;
   background-color: #fff;
   float: right;
@@ -32,10 +32,10 @@ body {
   box-shadow: 2px 2px 2px #888888;
   width: 200px;
   text-align: center; }
-  .login label {
+  .ilearn__login label {
     font-size: 20px; }
 
-.ilearn--input {
+.ilearn__input {
   height: 35px;
   padding: 0 10px;
   border-radius: 4px;
@@ -43,15 +43,34 @@ body {
   margin: 10px;
   width: 150px; }
 
-.ilearn--button {
+.ilearn__button {
   padding: 10px 25px;
   color: #fff;
   background-color: #566DCA;
   border: 0;
   font-size: 12px; }
-  .ilearn--button:hover {
+  .ilearn__button:hover {
     cursor: pointer;
     background-color: #45429A; }
+
+.ilearn__register {
+  font-size: 12px;
+  padding-top: 10px;
+  float: right; }
+  .ilearn__register a {
+    color: #566DCA; }
+
+.register {
+  text-align: center;
+  margin: 20px;
+  padding: 15px; }
+  .register h1 {
+    color: #2C3A71; }
+  .register .ilearn__input {
+    width: 200px; }
+  .register .ilearn__button {
+    width: 220px;
+    margin-top: 20px; }
 
 .navigation {
   background-color: #ffffff;

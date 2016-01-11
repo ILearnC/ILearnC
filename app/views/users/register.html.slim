@@ -1,0 +1,10 @@
+.register
+  h1 欢迎注册
+  form action="/create" method="post"
+    div
+      input#name.ilearn__input name="user[name]" placeholder=("请输入用户名") type="text"
+    div
+      input#email.ilearn__input name="user[email]" placeholder=("请输入邮箱") type="text"
+    div
+      input#password.ilearn__input name="user[password]" placeholder=("请输入密码") type="password"
+    input.ilearn__button name="register" type="submit" value="注册"
