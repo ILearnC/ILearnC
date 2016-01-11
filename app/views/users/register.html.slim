@@ -1,0 +1,12 @@
+h1 欢迎注册
+form.user-form action="/users" method="post"
+  div
+    label for="username"  用户名
+    input#username placeholder=("请输入用户名") type="text"
+  div
+    label for="email"  邮箱
+    input#email placeholder=("请输入邮箱") type="text"
+  div
+    label for="password_digest"  密码
+    input#password placeholder=("请输入密码") type="password"
+  input name="commit" type="submit" value="注册"
