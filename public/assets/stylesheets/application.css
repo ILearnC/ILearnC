@@ -53,6 +53,25 @@ body {
     cursor: pointer;
     background-color: #45429A; }
 
+.ilearn__register {
+  font-size: 12px;
+  padding-top: 10px;
+  float: right; }
+  .ilearn__register a {
+    color: #566DCA; }
+
+.register {
+  text-align: center;
+  margin: 20px;
+  padding: 15px; }
+  .register h1 {
+    color: #2C3A71; }
+  .register .ilearn__input {
+    width: 200px; }
+  .register .ilearn__button {
+    width: 220px;
+    margin-top: 20px; }
+
 .navigation {
   background-color: #ffffff;
   height: 50px;

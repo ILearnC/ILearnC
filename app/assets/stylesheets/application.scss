@@ -1,5 +1,6 @@
 @import 'partials/homepage';
 @import 'partials/login';
+@import 'partials/register';
 
 @mixin navigation($navigationAlign) {
   float: #{$navigationAlign};

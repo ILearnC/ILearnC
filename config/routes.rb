@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   resources :users
   get '/login' => 'users#login'
   get '/register' => 'users#register'
+  post '/create' => 'users#create'
 end
