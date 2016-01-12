@@ -11,6 +11,10 @@ html
       div.navigation--message
         a href='/' 首页
       div.navigation--login
-        a href='/login' 登录
+        - if logged_in?
+          a href='/' #{session[:userName]}
+          a href='/logout' 退出
+        - else
+          a href='/login' 登录
     div
       = yield
