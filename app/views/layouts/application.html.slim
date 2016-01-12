@@ -9,7 +9,11 @@ html
   body
     nav.navigation
       div.navigation--message
-        a href='/' 首页
+        ul.navigation--session
+          li
+            a.logo--image href='/'
+          li
+            a href='/' 首页
       div.navigation--login
         - if logged_in?
           ul.navigation--session
