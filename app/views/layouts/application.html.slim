@@ -12,9 +12,14 @@ html
         a href='/' 首页
       div.navigation--login
         - if logged_in?
-          a href='/' #{session[:userName]}
-          a href='/logout' 退出
+          ul.navigation--session
+            li.navigation--session__username
+              a href='/' #{session[:userName]}
+            li
+              a href='/logout' 退出
         - else
-          a href='/login' 登录
+          ul.navigation--session
+            li
+              a href='/login' 登录
     div
       = yield
