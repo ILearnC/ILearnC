@@ -1,13 +1,13 @@
 .ilearn__login {
   margin: 15px;
   background-color: #fff;
-  float: right;
-  margin: 50px 15%;
+  float: left;
+  margin: 10% 15%;
   padding: 25px 15px;
   background-color: #FFFFFF;
   border-radius: 5px;
   box-shadow: 2px 2px 2px #888888;
-  width: 200px;
+  width: 270px;
   text-align: center;
 
   label {
@@ -45,4 +45,10 @@
   a {
     color: #566DCA;
   }
+}
+
+.image {
+  background-image: url('images/login.jpg');
+  background-size: cover;
+  height: 750px;
 }
