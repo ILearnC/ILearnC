@@ -29,4 +29,20 @@
 
 .navigation--login {
   @include navigation(right);
+  padding: 0;
+}
+
+.navigation--session {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    padding: 12px 30px;
+  }
+
+  &__username {
+    padding: 15px 30px !important;
+  }
 }
