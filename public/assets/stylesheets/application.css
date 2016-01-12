@@ -24,13 +24,13 @@ body {
 .ilearn__login {
   margin: 15px;
   background-color: #fff;
-  float: right;
-  margin: 50px 15%;
+  float: left;
+  margin: 10% 0;
   padding: 25px 15px;
   background-color: #FFFFFF;
   border-radius: 5px;
   box-shadow: 2px 2px 2px #888888;
-  width: 200px;
+  width: 270px;
   text-align: center; }
   .ilearn__login label {
     font-size: 20px; }
@@ -60,6 +60,11 @@ body {
   .ilearn__register a {
     color: #566DCA; }
 
+.image {
+  background-image: url("images/login.jpg");
+  background-size: cover;
+  height: 750px; }
+
 .register {
   text-align: center;
   margin: 20px;
@@ -80,7 +85,8 @@ body {
 
 .navigation--message {
   float: left;
-  padding: 12px 35px; }
+  padding: 12px 35px;
+  padding: 0; }
   .navigation--message a {
     color: #566DCA;
     text-decoration: none; }
@@ -89,9 +95,25 @@ body {
 
 .navigation--login {
   float: right;
-  padding: 12px 35px; }
+  padding: 12px 35px;
+  padding: 0; }
   .navigation--login a {
     color: #566DCA;
     text-decoration: none; }
     .navigation--login a:hover {
       color: #45429A; }
+
+.navigation--session {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .navigation--session li {
+    padding: 12px 30px; }
+  .navigation--session__username {
+    padding: 15px 30px !important; }
+
+.logo--image {
+  background: url("images/logo.png") no-repeat 13px 8px;
+  background-size: 100px 30px;
+  padding: 10px 90px; }

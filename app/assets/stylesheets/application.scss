@@ -25,6 +25,7 @@
 
 .navigation--message {
   @include navigation(left);
+  padding: 0;
 }
 
 .navigation--login {
@@ -45,4 +46,10 @@
   &__username {
     padding: 15px 30px !important;
   }
+}
+
+.logo--image {
+  background: url('images/logo.png') no-repeat 13px 8px;
+  background-size: 100px 30px;
+  padding: 10px 90px;
 }
