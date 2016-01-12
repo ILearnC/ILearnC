@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160106085634) do
+ActiveRecord::Schema.define(version: 20160112091222) do
 
   create_table "images", force: :cascade do |t|
     t.text     "thumbnail"
@@ -28,6 +28,11 @@ ActiveRecord::Schema.define(version: 20160106085634) do
     t.integer  "user_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.string   "teacher"
+    t.string   "skill_type"
+    t.date     "start_date"
+    t.date     "end_date"
+    t.integer  "head_count"
   end
 
   add_index "skills", ["user_id"], name: "index_skills_on_user_id"
