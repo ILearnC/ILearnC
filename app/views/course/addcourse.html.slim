@@ -1,0 +1,18 @@
+.register
+  h1 添加课程
+  form action="/addcourse" method="post"
+    div
+      input#titel.ilearn__input name="skill[title]" placeholder=("请输入课程名称") type="text"
+    div
+      input#description.ilearn__input name="skill[description]" placeholder=("请输入课程描述") type="text"
+    div
+      input#teacher.ilearn__input name="skill[teacher]" placeholder=("请输入授课教师") type="text"
+    div
+      input#skill_type.ilearn__input name="skill[skill_type]" placeholder=("请输入课程类别") type="text"
+    div
+      input#start_date.ilearn__input name="skill[start_date]" placeholder=("请输入课程开始时间") type="text"
+    div
+      input#end_date.ilearn__input name="skill[end_date]" placeholder=("请输入课程结束时间") type="text"
+    div
+      input#head_count.ilearn__input name="skill[head_count]" placeholder=("请输入课程上线人数") type="text"
+    input.ilearn__button name="addcourse" type="submit" value="添加"

@@ -17,6 +17,8 @@ html
       div.navigation--login
         - if logged_in?
           ul.navigation--session
+            li
+              a href='/addcourse' 添加课程
             li.navigation--session__username
               a href='/' #{session[:userName]}
             li
