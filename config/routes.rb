@@ -12,5 +12,6 @@ Rails.application.routes.draw do
   get '/logout' => 'users#logout'
 
   get '/addcourse' => 'course#course'
+  post '/addcourse' => 'course#addcourse'
 
 end
