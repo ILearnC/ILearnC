@@ -11,7 +11,7 @@ users = User.create([
                         {name: 'MengRu', email: 'mengru@gmail.com', password: '123456'}
                     ])
 skill_set1 = Skill.create([
-                              {title: 'css', description: 'css basics', user: users.first},
+                              {title: 'CSS', description: 'css basics', user: users.first},
                               {title: 'Ruby', description: 'Ruby basics', user: users.first}
                           ])
 

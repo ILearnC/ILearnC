@@ -5,18 +5,17 @@ import source from 'vinyl-source-stream'
 import watcher from './lib/watcher'
 import config from './config'
 
-let vendor = Object.keys(require(path.join(process.cwd(), 'package.json')).dependencies)
+let vendor = Object.keys(require(path.join(process.cwd(), 'package.json')).dependencies);
 function browserifyTask(){
-  browserify(config.javascript.path + 'index.js', {
+  browserify(config.javascript.path + '/homepage/index.js', {
       extensions: ['js', 'jsx'],
       debug: true
     })
-    .external(vendor)
     .bundle()
     .on('error', err => {
       console.error(err.message)
     })
-    .pipe(source('index.js'))
+    .pipe(source('homepage/index.js'))
     .pipe(gulp.dest(config.build.path + config.build.javascriptPath))
 }
 
