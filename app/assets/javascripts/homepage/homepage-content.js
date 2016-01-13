@@ -1,3 +1,4 @@
+global.jQuery = require('jquery');
 var _ = require('lodash');
 var React = require('react');
 var HeroPanel = require('./hero-panel');
