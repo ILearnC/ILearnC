@@ -15,6 +15,10 @@ class CourseController < ApplicationController
     end
   end
 
+  def allcourse
+    @skills = Skill.all
+  end
+
   private
     def course_params
       params.require(:skill)

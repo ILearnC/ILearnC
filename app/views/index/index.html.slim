@@ -1,7 +1,18 @@
+label.skills 学习技能
 div.skills
   - @skills.each do |skill|
-    div.skills-item
-      .skill-image
-      .skill-title
-        div #{skill.title}
-        div #{skill.description}
+      - if skill.skill_type === '学习技能'
+        div.skills-item
+          .skill-image
+          .skill-title
+            div #{skill.title}
+            div #{skill.description}
+label.skills 生活技能
+div.skills
+  - @skills.each do |skill|
+      - if skill.skill_type === '生活技能'
+        div.skills-item
+          .skill-image
+          .skill-title
+            div #{skill.title}
+            div #{skill.description}
