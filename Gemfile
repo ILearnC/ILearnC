@@ -30,6 +30,5 @@ end
 
 group :production do
   gem 'pg'
-  gem 'rspec-rails'
   gem 'rails_12factor'
 end
