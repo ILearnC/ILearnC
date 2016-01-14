@@ -17,9 +17,7 @@ module.exports = React.createClass({
                         {
                             skills.map(function (skill) {
                                 return (
-                                    <div className="col-md-3">
-                                        <Skill skill={skill} key={_.uniqueId('skill-')}/>
-                                    </div>
+                                    <Skill skill={skill} key={_.uniqueId('skill-')}/>
                                 )
                             })
                         }

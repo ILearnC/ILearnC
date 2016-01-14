@@ -5,7 +5,7 @@ module.exports = React.createClass({
         var skill = this.props.skill;
 
         return (
-            <div className="skill">
+            <div className="skill col-md-3">
                 <div className="skill-image">
                     <img src={skill.image}/>
                 </div>

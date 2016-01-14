@@ -37,7 +37,7 @@ module.exports = React.createClass({
                 <div className="container">
                     {
                         _.map(this.state.categories, function (skills, category) {
-                            return <CategoricalSkillsPanel category={category} skills={skills}/>
+                            return <CategoricalSkillsPanel category={category} skills={skills} key={_.uniqueId('categorical-skill-panel-')}/>
                         })
                     }
                 </div>
