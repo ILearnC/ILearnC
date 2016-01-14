@@ -1,16 +1,20 @@
 language: node_js
 node_js:
-  - 4.0.0
-before_script:
+  - "node"
+before_install:
+  - rvm install 2.2.3
+install:
+  - bundle install --path vendor/bundle
   - npm install
-  - npm test
-  - gulp build
-# deploy:
-#   provider: heroku
-#   buildpack: ruby
-#   api_key:
-#     secure: acGJhsq1lbB9L/lhCVfDi+sj3G0Z6c/rsqmsixKeuq1M5gNTYXjJQ0H8B6jEhhLPK0ZpqAjBevRhVa5vTzkV23AZwKGiJIlqU1PesXb1uCMGGQ2ZNgc+8Ji91Ar1+9qTbxLOWILuqbZUKFNE+MgeRm7U37RrA4ftLhd6xWQrsvCNKEoBSL4TA0NS2RklfxMbkq8eoCbDsFfTlWAhRye5zyEGArZKUklvg/IVnlzNEELWMAhcIC0jVX0/PCAFzjDAtIYIXRsmuOcJTpv4qRhwRXoOH3GIGCb6+pRBB3VMUS8+VMuCJK2GL5C/99gCUq8/lDcg6D4q4SGmKzE1OquCZyOo2m95SYyuCHfVMvIKdOD8gNsLvUC9dSeCDrFdeYvyvtHKzY8N4RcVRjPRMYBxW8B+8xLzrVsFPF7ota52+bUvJWoxUMksTjmJ7jKYnteLar95XiAzKs++0sHct8uVtMRTivr8WusAQVS5mJDxoaMOVWVCswr4LloBcJK+czn+1FHTbqAY7463lOafEEs0NS87OAikO17aF2ewBLrM+ERx2jw0JsqsTX+DKCKdtrniJhsuR+T+Jd8p4Cm7/eQK4Z40pVFcDsDjI49Dh1INsaoWQxRUgYyOX5sOhLRO5u5CjZnhL78Ass0rT6WApqqqJTsf9GybqJLKPBxr17Zet50=
-#   app:
-#     master: ilearnc-master
-#   run:
-#     - rake db:drop db:migrate db:seed
+script:
+  - npm test && gulp build
+deploy:
+  provider: heroku
+  api_key:
+    secure: acGJhsq1lbB9L/lhCVfDi+sj3G0Z6c/rsqmsixKeuq1M5gNTYXjJQ0H8B6jEhhLPK0ZpqAjBevRhVa5vTzkV23AZwKGiJIlqU1PesXb1uCMGGQ2ZNgc+8Ji91Ar1+9qTbxLOWILuqbZUKFNE+MgeRm7U37RrA4ftLhd6xWQrsvCNKEoBSL4TA0NS2RklfxMbkq8eoCbDsFfTlWAhRye5zyEGArZKUklvg/IVnlzNEELWMAhcIC0jVX0/PCAFzjDAtIYIXRsmuOcJTpv4qRhwRXoOH3GIGCb6+pRBB3VMUS8+VMuCJK2GL5C/99gCUq8/lDcg6D4q4SGmKzE1OquCZyOo2m95SYyuCHfVMvIKdOD8gNsLvUC9dSeCDrFdeYvyvtHKzY8N4RcVRjPRMYBxW8B+8xLzrVsFPF7ota52+bUvJWoxUMksTjmJ7jKYnteLar95XiAzKs++0sHct8uVtMRTivr8WusAQVS5mJDxoaMOVWVCswr4LloBcJK+czn+1FHTbqAY7463lOafEEs0NS87OAikO17aF2ewBLrM+ERx2jw0JsqsTX+DKCKdtrniJhsuR+T+Jd8p4Cm7/eQK4Z40pVFcDsDjI49Dh1INsaoWQxRUgYyOX5sOhLRO5u5CjZnhL78Ass0rT6WApqqqJTsf9GybqJLKPBxr17Zet50=
+  app:
+    staging: ilearnc-staging
+    master: ilearnc-prod
+  skip_cleanup: true
+  run:
+    - bundle exec rake db:migrate
