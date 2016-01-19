@@ -1,14 +1,1 @@
-div.image
-  form action="/homepage" method="get"
-    div.ilearn__login
-      div
-        label 欢迎登录
-      div
-        input.ilearn__input name="name" placeholder="请输入用户名" type="text"
-      div
-        input.ilearn__input name="password" placeholder="请输入用户名" type="password"
-      div
-        div
-          input#login.ilearn__button type="submit" value="登录"
-        div.ilearn__register
-          a href='/register' 立即注册
+= react_component('Login')
