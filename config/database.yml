@@ -1,7 +1,7 @@
 default: &default
   adapter: mysql2
-  reconnect: false
   username: root
+  encoding: utf8
   pool: 5
   host: localhost
 
@@ -17,9 +17,10 @@ test:
   database: ILearnC_test
 
 production:
-  adapter:
-  reconnect: false
+  adapter: postgresql
   database: d1vvden2kfq8vl
   username: zwlaphnumnzevo
+  password: FC85PaYeS0CEmoiMPJKFsvmcDC
+  encoding: unicode
   pool: 5
   host: localhost
