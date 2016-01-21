@@ -14,10 +14,12 @@ install:
 
 before_script:
   - mysql -e 'create database ILearnC_test;' -uroot
+  - bundle install
   - npm install -g gulp
   - npm install
 
 script:
+  - bundle exec rake spec
   - npm test && gulp build
 
 deploy:
@@ -27,6 +29,6 @@ deploy:
   app:
     staging: ilearnc-staging
     master: ilearnc-prod
-  skip_cleanup: true
   run:
-    - bundle exec rake db:migrate
+    - "rake db:migrate db:seed"
+    # - bundle exec rake db:migrate
