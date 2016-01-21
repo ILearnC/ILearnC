@@ -8,13 +8,13 @@ install:
   - npm install
 script:
   - npm test && gulp build
-deploy:
-  provider: heroku
-  api_key:
-    secure: m8/mM2sfUFto+Ub0rRyoKfN2kZ30UWNRi7PLmKPtm6i2fx1aWUrz+Pb+n8Cu0EpTRGraz7LsFFSnNfpVzV0/JpX6z2ERi2CVcIMUnAgnEbQKwzDRrk6G0vTUVsW4KMYik+j/RDARcKto1h+fmRXFsopdF7uZ30NxsoGCBJ6MXqPB3016io5uuQEcMhKZ6JpCm0neLBp5znCYwIi1XxntMWacdSH3P/6C/ARZ1lFGgGwQDHbNJVXBs65FntzbzgaEUkOZuZB8CH+g54XE/FKWsPYWPlzXeajWPbLRoW0OH5hQOheIvlsJqKhQjoFZJg70+mcb0nsNEQaUXC8nvJTT+e7d+oI95fKP3uDykGLugVk0nRNFkzpZRt3cNVx9rZnPmrw/3ei1gOq8iTVrcKWkKTSjk+kGgoYwJYvfUquYVk1711l2bk06gRb04yPToKwik5lccybAxyjEHjMZJTloVa9HUJDpc4fhKohJ7x/lEktVw69pOJXbqxOJcv4ZubwpI8xC4f98zObyBCTtZn8JzvmRl1F8AO2cP1a0IsLY53R6IzZcFfDl26BhPSDut1bfMNUhMgG56aoZcf6hxc0H8pEzL2yHb025HT90NJuRLK6bvUE10cADDK0Xfodmb2ZqnmNiu6NNIcdHNCjDW3VVc9rposQBFWwl4vJmKS+0rX8=
-  app:
-    staging: ilearnc-staging
-    master: ilearnc-prod
-  skip_cleanup: true
-  run:
-    - bundle exec rake db:migrate
+# deploy:
+#   provider: heroku
+#   api_key:
+#     secure: m8/mM2sfUFto+Ub0rRyoKfN2kZ30UWNRi7PLmKPtm6i2fx1aWUrz+Pb+n8Cu0EpTRGraz7LsFFSnNfpVzV0/JpX6z2ERi2CVcIMUnAgnEbQKwzDRrk6G0vTUVsW4KMYik+j/RDARcKto1h+fmRXFsopdF7uZ30NxsoGCBJ6MXqPB3016io5uuQEcMhKZ6JpCm0neLBp5znCYwIi1XxntMWacdSH3P/6C/ARZ1lFGgGwQDHbNJVXBs65FntzbzgaEUkOZuZB8CH+g54XE/FKWsPYWPlzXeajWPbLRoW0OH5hQOheIvlsJqKhQjoFZJg70+mcb0nsNEQaUXC8nvJTT+e7d+oI95fKP3uDykGLugVk0nRNFkzpZRt3cNVx9rZnPmrw/3ei1gOq8iTVrcKWkKTSjk+kGgoYwJYvfUquYVk1711l2bk06gRb04yPToKwik5lccybAxyjEHjMZJTloVa9HUJDpc4fhKohJ7x/lEktVw69pOJXbqxOJcv4ZubwpI8xC4f98zObyBCTtZn8JzvmRl1F8AO2cP1a0IsLY53R6IzZcFfDl26BhPSDut1bfMNUhMgG56aoZcf6hxc0H8pEzL2yHb025HT90NJuRLK6bvUE10cADDK0Xfodmb2ZqnmNiu6NNIcdHNCjDW3VVc9rposQBFWwl4vJmKS+0rX8=
+#   app:
+#     staging: ilearnc-staging
+#     master: ilearnc-prod
+#   skip_cleanup: true
+#   run:
+#     - bundle exec rake db:migrate

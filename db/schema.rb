@@ -14,30 +14,30 @@
 ActiveRecord::Schema.define(version: 20160106085634) do
 
   create_table "images", force: :cascade do |t|
-    t.text     "thumbnail"
-    t.integer  "skill_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.text     "thumbnail",  limit: 65535
+    t.integer  "skill_id",   limit: 4
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
   end
 
-  add_index "images", ["skill_id"], name: "index_images_on_skill_id"
+  add_index "images", ["skill_id"], name: "index_images_on_skill_id", using: :btree
 
   create_table "skills", force: :cascade do |t|
-    t.string   "title"
-    t.string   "description"
-    t.integer  "user_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.string   "title",       limit: 255
+    t.string   "description", limit: 255
+    t.integer  "user_id",     limit: 4
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
   end
 
-  add_index "skills", ["user_id"], name: "index_skills_on_user_id"
+  add_index "skills", ["user_id"], name: "index_skills_on_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
-    t.string   "name"
-    t.string   "email"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string   "password"
+    t.string   "name",       limit: 255
+    t.string   "email",      limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+    t.string   "password",   limit: 255
   end
 
 end
