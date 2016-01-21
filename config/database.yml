@@ -17,5 +17,9 @@ test:
   database: ILearnC_test
 
 production:
-  <<: *default
-  database: ILearnC_production
+  adapter:
+  reconnect: false
+  database: d1vvden2kfq8vl
+  username: zwlaphnumnzevo
+  pool: 5
+  host: localhost
