@@ -1,11 +1,15 @@
 language: ruby
 
 env:
-  - TRAVIS_NODE_VERSION="2.2.3"
+  - TRAVIS_NODE_VERSION="4"
 
 install:
   - bundle install --path vendor/bundle
-  - npm install && nvm install $TRAVIS_NODE_VERSION
+  - rm -rf /.nvm && git clone https://github.com/creationix/nvm.git /.nvm && (cd /.nvm && git checkout `git describe --abbrev=0 --tags`) && source /.nvm/nvm.sh && nvm install $TRAVIS_NODE_VERSION
+
+before_script:
+  - npm install -g gulp
+  - npm install
 
 script:
   - npm test && gulp build
