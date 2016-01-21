@@ -19,7 +19,7 @@ before_script:
   - npm install
 
 script:
-  - bundle exec rake spec
+  # - bundle exec rake spec
   - npm test && gulp build
 
 deploy:
@@ -31,4 +31,5 @@ deploy:
     master: ilearnc-prod
   run:
     - "rake db:migrate db:seed"
+    - "rake assets:precompile"
     # - bundle exec rake db:migrate
