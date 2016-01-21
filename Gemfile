@@ -11,17 +11,15 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'byebug'
 
-group :production, :test do
-  gem 'pg', '0.15.1'
-  gem 'rails_12factor', '0.0.2'
-end
-
-group :development do
+group :development, :test do
   gem 'mysql2', '~> 0.4.2'
   gem 'web-console', '~> 2.0'
   gem 'spring'
+  gem 'byebug'
+  gem 'rspec-rails'
 end
 
-group :development, :test do
-  gem 'byebug'
+group :production do
+  gem 'pg', '0.15.1'
+  gem 'rails_12factor', '0.0.2'
 end
