@@ -3,11 +3,11 @@ rvm:
   - 2.2.3
 
 env:
-  - TRAVIS_NODE_VERSION="4"
+  - TRAVIS_NODE_VERSION="4.0.0"
 
 install:
-  - bundle install --path vendor/bundle
   - rm -rf ~/.nvm && git clone https://github.com/creationix/nvm.git ~/.nvm && (cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`) && source ~/.nvm/nvm.sh && nvm install $TRAVIS_NODE_VERSION
+  - bundle install --path vendor/bundle
 
 script:
   - npm install -g gulp
