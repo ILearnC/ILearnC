@@ -1,13 +1,18 @@
 Rails.application.routes.draw do
   resources :index
+  resources :users
+  resources :course
 
   root 'index#index'
 
-  resources :users
   get '/login' => 'users#login'
   get '/homepage' => 'users#homepage'
   get '/register' => 'users#register'
   post '/create' => 'users#create'
-
   get '/logout' => 'users#logout'
+
+  get '/addcourse' => 'course#course'
+  post '/addcourse' => 'course#addcourse'
+  get '/allcourse' => 'course#allcourse'
+
 end

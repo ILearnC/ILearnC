@@ -14,9 +14,13 @@ html
             a.logo--image href='/'
           li
             a href='/' 首页
+          li
+            a href='/allcourse' 技能
       div.navigation--login
         - if logged_in?
           ul.navigation--session
+            li
+              a href='/addcourse' 添加课程
             li.navigation--session__username
               a href='/' #{session[:userName]}
             li

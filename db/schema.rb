@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160106085634) do
+ActiveRecord::Schema.define(version: 20160112091222) do
 
   create_table "images", force: :cascade do |t|
     t.text     "thumbnail",  limit: 65535
@@ -23,11 +23,16 @@ ActiveRecord::Schema.define(version: 20160106085634) do
   add_index "images", ["skill_id"], name: "index_images_on_skill_id", using: :btree
 
   create_table "skills", force: :cascade do |t|
-    t.string   "title",       limit: 255
-    t.string   "description", limit: 255
-    t.integer  "user_id",     limit: 4
-    t.datetime "created_at",              null: false
-    t.datetime "updated_at",              null: false
+    t.string   "title"
+    t.string   "description"
+    t.integer  "user_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.string   "teacher"
+    t.string   "skill_type"
+    t.date     "start_date"
+    t.date     "end_date"
+    t.integer  "head_count"
   end
 
   add_index "skills", ["user_id"], name: "index_skills_on_user_id", using: :btree
