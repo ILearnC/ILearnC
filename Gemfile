@@ -10,6 +10,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'byebug'
+gem 'rspec-rails'
 
 group :development, :test do
   gem 'mysql2', '~> 0.4.2'
@@ -20,6 +21,7 @@ group :development, :test do
 end
 
 group :production do
-  gem 'pg', '0.15.1'
-  gem 'rails_12factor', '0.0.2'
+  gem 'pg'
+  gem 'rspec-rails'
+  gem 'rails_12factor'
 end
