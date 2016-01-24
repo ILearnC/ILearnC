@@ -2,6 +2,7 @@ class CourseController < ApplicationController
   include UsersHelper
 
   def course
+    @skilltypes = Skilltype.all
     render 'addcourse'
   end
 

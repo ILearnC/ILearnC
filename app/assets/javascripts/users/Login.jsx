@@ -1,4 +1,4 @@
-var Login = React.createClass({
+let Login = React.createClass({
   render: function () {
     return (
       <div className='image'>

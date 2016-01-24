@@ -1,4 +1,4 @@
-var Register = React.createClass({
+let Register = React.createClass({
   render: function () {
     return (
       <div className='register'>
