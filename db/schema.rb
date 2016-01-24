@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160124093951) do
+ActiveRecord::Schema.define(version: 20160124104820) do
 
   create_table "images", force: :cascade do |t|
     t.text     "thumbnail",  limit: 65535
@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 20160124093951) do
     t.datetime "created_at",              null: false
     t.datetime "updated_at",              null: false
     t.string   "teacher",     limit: 255
-    t.string   "skill_type",  limit: 255
+    t.integer  "skill_type",  limit: 4
     t.date     "start_date"
     t.date     "end_date"
     t.integer  "head_count",  limit: 4

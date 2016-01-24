@@ -3,7 +3,23 @@ let AddCourse = React.createClass({
     skilltypes: React.PropTypes.array
   },
 
+  getInitialState: function () {
+    return {
+      selectskill: this.props.skilltypes[0].id
+    }
+  },
+
+  _setSkillType: function (event) {
+    this.setState({
+      selectskill: event.target.value
+    })
+  },
+
   render: function () {
+    let skillList = this.props.skilltypes.map(skilltype => {
+      return <option value={skilltype.id} key={skilltype.id}>{skilltype.typename}</option>
+    })
+
     return (
       <div className='register'>
         <h1>添加课程</h1>
@@ -14,9 +30,9 @@ let AddCourse = React.createClass({
           <div>
             <input id='teacher' className='ilearn__input' name='skill[teacher]' placeholder='请输入授课教师' type='text' />
           </div>
-          <div>
-            <input id='skill_type' className='ilearn__input' name='skill[skill_type]' placeholder='请输入课程类别' type='text' />
-          </div>
+          <select value={this.state.selectskill} onChange={this._setSkillType} name='skill[skill_type]'>
+            {skillList}
+          </select>
           <div>
             <input id='start_date' className='ilearn__input' name='skill[start_date]' placeholder='请输入课程开始时间' type='text' />
           </div>
