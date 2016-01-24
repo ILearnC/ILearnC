@@ -10,14 +10,20 @@ users = User.create([
                         {name: 'XiaoRong', email: 'xiaorong@gmail.com', password: '123456'},
                         {name: 'MengRu', email: 'mengru@gmail.com', password: '123456'}
                     ])
+
+skill_type = Skilltype.create([
+                        {typename: '学习技能'},
+                        {typename: '生活技能'},
+                    ])
+
 skill_set1 = Skill.create([
-                              {title: 'css', description: 'css basics', teacher: 'xiaodong', skill_type: '学习技能', start_date: '2015-09-10', end_date: '2015-12-01', head_count: 20, user: users.first},
-                              {title: 'cook', description: 'cook basics', teacher: 'xiaodong', skill_type: '生活技能', start_date: '2015-10-10', end_date: '2015-11-30', head_count: 20, user: users.first}
+                              {title: 'css', description: 'css basics', teacher: 'xiaodong', skill_type: skill_type.first.id, start_date: '2015-09-10', end_date: '2015-12-01', head_count: 20, user: users.first},
+                              {title: 'cook', description: 'cook basics', teacher: 'xiaodong', skill_type: skill_type.last.id, start_date: '2015-10-10', end_date: '2015-11-30', head_count: 20, user: users.first}
                           ])
 
 skill_set2 = Skill.create([
-                              {title: 'Mobile', description: 'Mobile basics', teacher: 'xiaodong', skill_type: '学习技能', start_date: '2016-01-10', end_date: '2015-02-01', head_count: 20, user: users.last},
-                              {title: 'Web', description: 'Web basics', teacher: 'xiaodong', skill_type: '学习技能', start_date: '2016-01-31', end_date: '2016-02-01', head_count: 20, user: users.last}
+                              {title: 'Mobile', description: 'Mobile basics', teacher: 'xiaodong', skill_type: skill_type.first.id, start_date: '2016-01-10', end_date: '2015-02-01', head_count: 20, user: users.last},
+                              {title: 'Web', description: 'Web basics', teacher: 'xiaodong', skill_type: skill_type.first.id, start_date: '2016-01-31', end_date: '2016-02-01', head_count: 20, user: users.last}
                           ])
 
 Image.create([
