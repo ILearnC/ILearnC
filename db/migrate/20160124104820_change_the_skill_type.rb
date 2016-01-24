@@ -4,6 +4,6 @@ class ChangeTheSkillType < ActiveRecord::Migration
   end
 
   def down
-    change_column :skills, :skill_type, :integer
+    change_column :skills, :skill_type, :string
   end
 end
