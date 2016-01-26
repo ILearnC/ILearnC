@@ -9,7 +9,7 @@ let HeroPanel = React.createClass({
                 <li data-target="#hero-carousel" data-slide-to="2"></li>
               </ol>
 
-              <div className="carousel-inner" role="listbox">
+              <div className="carousel-inner">
                 <div className="item active">
                   <img src='/assets/images/learn1.jpg'/>
                 </div>
@@ -21,15 +21,11 @@ let HeroPanel = React.createClass({
                 </div>
               </div>
 
-              <a className="left carousel-control" href="#hero-carousel" role="button"
-                 data-slide="prev">
-                <span className="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span className="sr-only">Previous</span>
+              <a className="left carousel-control" href="#hero-carousel" data-slide="prev">
+                <span className="glyphicon glyphicon-chevron-left"></span>
               </a>
-              <a className="right carousel-control" href="#hero-carousel" role="button"
-                 data-slide="next">
-                <span className="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span className="sr-only">Next</span>
+              <a className="right carousel-control" href="#hero-carousel" data-slide="next">
+                <span className="glyphicon glyphicon-chevron-right"></span>
               </a>
             </div>
           </div>

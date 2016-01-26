@@ -3,9 +3,12 @@ source "https://rails-assets.org"
 
 gem 'rails', '4.2.5'
 gem 'slim-rails', '~> 3.0', '>= 3.0.1'
-gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
+
 gem 'jquery-rails'
+gem 'bootstrap-sass', '~> 3.3.5'
+gem 'sass-rails', '>= 3.2'
+
 gem 'react-rails', '~> 1.0'
 gem 'lodash-rails'
 gem 'turbolinks'

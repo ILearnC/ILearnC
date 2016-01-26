@@ -7,16 +7,14 @@ let Homepage = React.createClass({
   leisureSkillId: 2,
 
   render: function () {
-    console.log(this.props.skills)
-
     let learningSkill = _.filter(this.props.skills, ['skill_type', this.learningSkillId])
       .map(skill => {
-        return (<Skill skill={skill} />)
+        return (<Skill skill={skill} key={skill.id} />)
       })
 
     let leisureSkill =  _.filter(this.props.skills, ['skill_type', this.leisureSkillId])
       .map(skill => {
-        return (<Skill skill={skill} />)
+        return (<Skill skill={skill} key={skill.id}/>)
       })
     return (
       <div>
