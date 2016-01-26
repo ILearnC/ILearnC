@@ -1,7 +1,1 @@
-div.skills
-  - @skills.each do |skill|
-      div.skills-item
-        .skill-image
-        .skill-title
-          div #{skill.title}
-          div #{skill.description}
+= react_component('AllCourse', {skills: @skills})

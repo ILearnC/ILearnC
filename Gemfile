@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+source "https://rails-assets.org"
 
 gem 'rails', '4.2.5'
 gem 'slim-rails', '~> 3.0', '>= 3.0.1'
@@ -11,6 +12,9 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'byebug'
 gem 'rspec-rails'
+
+gem 'rails-assets-react-date-picker'
+gem "rails-assets-moment"
 
 group :development, :test do
   gem 'mysql2', '~> 0.4.2'
