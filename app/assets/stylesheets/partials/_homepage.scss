@@ -37,16 +37,11 @@ body {
   }
 }
 
-// 后期会去掉这个样式
-.skills {
-  display: flex;
-  margin: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
+.ilearnc-thumbnail {
+  width: 250px;
 
-  h1 {
-    width: 100%;
-    text-align: center;
+  &:hover {
+    -webkit-filter: blur(1.2px);
   }
 }
 
@@ -54,23 +49,3 @@ body {
   margin: 0 auto;
   height: 380px;
 }
-
-.skills-item {
-  margin: 20px;
-  padding: 20px;
-  width: 180px;
-  background-color: #FFFFFF;
-  border-radius: 5px;
-  box-shadow: 2px 2px 2px #888888;
-}
-
-.skill-image {
-  height: 130px;
-  background-color: #86ADD3;
-  margin: 10px 0;
-}
-
-.skill-title {
-  text-transform: capitalize;
-}
-// 去掉样式的区域
