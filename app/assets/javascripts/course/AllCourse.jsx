@@ -11,7 +11,7 @@ let AllCourse = React.createClass({
     })
 
     return (
-      <div className='skills'>
+      <div className='col-md-10 col-md-offset-1'>
         {courses}
       </div>
     )

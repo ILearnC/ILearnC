@@ -5,9 +5,9 @@ let Skill = React.createClass({
 
   render: function () {
     return (
-      <div className='skills-item'>
-        <div className='skill-image'/>
-        <div className='skill-title'>
+      <div className='col-md-3 col-sm-6 img-rounded'>
+        <img src='/assets/images/default.png' className='img-rounded ilearnc-thumbnail'/>
+        <div>
           <div>{this.props.skill.title}</div>
           <div>{this.props.skill.description}</div>
         </div>
