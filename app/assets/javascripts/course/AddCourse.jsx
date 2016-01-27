@@ -33,12 +33,8 @@ let AddCourse = React.createClass({
           <select value={this.state.selectskill} onChange={this._setSkillType} name='skill[skill_type]'>
             {skillList}
           </select>
-          <div>
-            <input id='start_date' className='ilearn__input' name='skill[start_date]' placeholder='请输入课程开始时间' type='text' />
-          </div>
-          <div>
-            <input id='end_date' className='ilearn__input' name='skill[end_date]' placeholder='请输入课程结束时间' type='text' />
-          </div>
+          <Datepicker message='请输入课程开始时间 2014-01-12' name='skill[start_date]' datepickerId='start_date'/>
+          <Datepicker message='请输入课程结束时间 2015-01-22' name='skill[end_date]' datepickerId='end_date'/>
           <div>
             <input id='head_count' className='ilearn__input' name='skill[head_count]' placeholder='请输入课程上线人数' type='text'/>
           </div>
