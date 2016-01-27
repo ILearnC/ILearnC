@@ -4,7 +4,9 @@
 //= require jquery
 //= require bootstrap-sprockets
 //= require moment
+//= require bootstrap-datetimepicker
 
+//= require_tree ./components
 //= require_tree ./users
 
 //= require_tree ./course
