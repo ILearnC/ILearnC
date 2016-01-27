@@ -37,6 +37,22 @@ body {
   }
 }
 
+.ilearnc-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ilearnc-layout {
+  background-color: #fff;
+  width: 280px;
+  margin: 15px;
+  box-shadow: 3px 3px 2px #ccc;
+
+  &--item {
+    padding: 15px;
+  }
+}
+
 .ilearnc-thumbnail {
   width: 250px;
 

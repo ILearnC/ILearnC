@@ -19,14 +19,14 @@ let Homepage = React.createClass({
     return (
       <div>
         <HeroPanel />
-        <div className='col-md-10 col-md-offset-1'>
+        <div className='ilearnc-body'>
           <h1>学习技能</h1>
-          <div className='col-md-12'>
+          <div className='col-md-12 ilearnc-items'>
             {learningSkill}
           </div>
 
           <h1>生活技能</h1>
-          <div className='col-md-12'>
+          <div className='col-md-12 ilearnc-items'>
             {leisureSkill}
           </div>
         </div>
