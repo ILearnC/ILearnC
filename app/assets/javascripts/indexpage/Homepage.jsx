@@ -6,29 +6,38 @@ let Homepage = React.createClass({
   learningSkillId: 1,
   leisureSkillId: 2,
 
+  getFourItem: function (skillId) {
+    return _.take(_.filter(this.props.skills, ['skill_type', skillId]).reverse(), 4)
+  },
+
   render: function () {
-    let learningSkill = _.filter(this.props.skills, ['skill_type', this.learningSkillId])
+    let learningSkills = this.getFourItem(this.learningSkillId)
       .map(skill => {
         return (<Skill skill={skill} key={skill.id} />)
       })
 
-    let leisureSkill =  _.filter(this.props.skills, ['skill_type', this.leisureSkillId])
+    let leisureSkills =  this.getFourItem(this.leisureSkillId)
       .map(skill => {
         return (<Skill skill={skill} key={skill.id}/>)
       })
+
+    let selfSkills = ''
+
     return (
       <div>
         <HeroPanel />
         <div className='ilearnc-body'>
           <h1>学习技能</h1>
           <div className='col-md-12 ilearnc-items'>
-            {learningSkill}
+            {learningSkills}
           </div>
 
           <h1>生活技能</h1>
           <div className='col-md-12 ilearnc-items'>
-            {leisureSkill}
+            {leisureSkills}
           </div>
+
+          {selfSkills}
         </div>
       </div>
     )
