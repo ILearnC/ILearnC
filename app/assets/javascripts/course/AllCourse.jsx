@@ -4,7 +4,7 @@ let AllCourse = React.createClass({
   },
 
   render: function () {
-    let courses = this.props.skills.map(skill => {
+    let courses = this.props.skills.reverse().map(skill => {
       return (
         <Skill skill={skill} />
       )
