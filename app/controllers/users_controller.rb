@@ -21,7 +21,7 @@ class UsersController < ApplicationController
       has_user
       redirect_to :controller => 'index', :action => 'index'
     else
-      render 'register'
+      render 'login'
     end
   end
 
