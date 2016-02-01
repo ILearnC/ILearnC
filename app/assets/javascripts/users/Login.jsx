@@ -20,11 +20,12 @@ let Login = React.createClass({
                 <input id='login' className='btn btn-primary btn-block' type="submit" value="登录" />
               </div>
               <div className='ilearn__register'>
-                <a href='/register'>立即注册</a>
+                <a data-toggle='modal' data-target='#register'>立即注册</a>
               </div>
             </div>
           </div>
         </form>
+        <Register />
       </div>
     )
   }
