@@ -1,0 +1,24 @@
+.singlecourse {
+
+  h1 {
+    text-transform: uppercase;
+  }
+
+  img {
+    background-size: cover;
+    margin: 0px 30px;
+  }
+}
+
+.singlecourse-description {
+  font-size: 25px;
+  font-family: serif;
+  padding: 20px;
+
+  hr {
+    margin-top: 0;
+    margin-bottom: 12px;
+    border: 0;
+    border-top: 5px solid #337AB7;
+  }
+}
