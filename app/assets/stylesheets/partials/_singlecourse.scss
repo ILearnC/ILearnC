@@ -1,0 +1,56 @@
+.singlecourse {
+
+  h1 {
+    text-transform: uppercase;
+  }
+
+  img {
+    background-size: cover;
+    margin: 0px 30px;
+  }
+}
+
+.singlecourse-description {
+  font-size: 25px;
+  font-family: serif;
+  padding: 20px;
+
+  hr {
+    margin-top: 0;
+    margin-bottom: 12px;
+    border: 0;
+    border-top: 5px solid #337AB7;
+  }
+}
+
+.barcourse {
+  margin: 10px;
+  background-color: #fff;
+  padding: 20px 0;
+
+  &:hover {
+    box-shadow: 0 0px 8px rgba(46,143,237,0.3);
+  }
+
+  a {
+    margin: 0;
+    font-size: 25px;
+    font-family: serif;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  &--img {
+    img {
+      background-size: cover;
+      width: 200px;
+    }
+  }
+
+  &--description {
+    font-size: 15px;
+    font-family: fantasy;
+    padding: 10px 0 0;
+    color: #009DFF;
+  }
+}

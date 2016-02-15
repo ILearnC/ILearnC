@@ -13,5 +13,6 @@ Rails.application.routes.draw do
   get '/addcourse' => 'course#course'
   post '/addcourse' => 'course#addcourse'
   get '/allcourse' => 'course#allcourse'
+  get '/allcourse/:id' => 'course#singlecourse'
 
 end

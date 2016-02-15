@@ -6,7 +6,7 @@ let AllCourse = React.createClass({
   render: function () {
     let courses = this.props.skills.reverse().map(skill => {
       return (
-        <Skill skill={skill} />
+        <BarCourse skill={skill} />
       )
     })
 

@@ -20,6 +20,11 @@ class CourseController < ApplicationController
     @skills = Skill.all
   end
 
+  def singlecourse
+    @skill = Skill.find(params['id'])
+    render 'singlecourse'
+  end
+
   private
     def course_params
       params.require(:skill)
